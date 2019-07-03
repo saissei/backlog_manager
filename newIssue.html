@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html style='width: 500px; height: 420px; font-size:14px;'>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <!-- script -->
+    
+    <script type='text/javascript' src="./public/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/tether/tether.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/bootstrap/bootstrap.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/jsrender.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/moment.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./public/scripts/buttons.js"></script>
+    <script type="text/javascript" src="./public/scripts/backlog.js"></script>
+    <script type="text/javascript" src="./public/scripts/queryStrings.js"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/tether/tether.min.css" />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.min.css" />
+    <script src="./public/scripts/subscribe-info.js"></script>
+
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <form id='issueForm' style='padding-top: 10px'>
+        <div class='form-group'>
+          <label style="width: 18%">課題名</label>
+          <input style="width: 80%;" id='issueTitle' name='summary' required/>
+        </div>
+        <div class="form-group">
+          <label style="width: 18%">種別</label>
+          <select name="issueTypeId" id="Kind" style='width: 80%' required>
+            <option value="" style="display: none;"> --- 選択してください ---</option>
+          <script id="KindTmpl" type="text/x-jsrender">
+            <option value="{{:kId}}"> {{:Name}} </option>
+          </script>
+          </select>
+        </div>
+        <div class="form-group">
+          <label style="width: 18%">カテゴリ</label>
+          <select name="categoryId[]" id="Category" style='width: 80%'>
+            <option value="" style="display: none;"> --- 選択してください ---</option>
+          <script id="CateTmpl" type="text/x-jsrender">
+            <option value="{{:cId}}"> {{:Name}} </option>
+          </script>
+          </select>
+        </div>
+        <div class="form-group">
+            <label style="width: 18%">優先度</label>
+            <select name="priorityId" id="Priority" style='width: 80%' required>
+              <option value="" style="display: none;"> --- 選択してください ---</option>
+            <script id="prioTmpl" type="text/x-jsrender">
+              <option value="{{:priId}}"> {{:Name}} </option>
+            </script>
+            </select>
+        </div>
+        <div class="form-group">
+          <label style="width: 18%">担当者</label>
+          <select name="assigneeId" id="projectUser" style='width: 80%' required>
+            <option value="" style="display: none;"> --- 選択してください ---</option>
+          <script id="pUser" type="text/x-jsrender">
+            <option value="{{:userId}}"> {{:Name}} </option>
+          </script>
+          </select>
+        </div>
+        <div class='form-group float-left'>
+            <label for="start" style='padding-right: 1%'>開始日時</label>
+            <input name='startDate' class='flatpickr flatpickr-input'id='start' required/>
+        </div>
+        <div class='form-group float-right'>
+            <label for="end" style='padding-right: 1%'>終了日時</label>
+            <input name="dueDate" class='flatpickr flatpickr-input' id='end' required/>
+        </div>
+
+        <div class='form-group'>
+            <label for="issueDesc" style="width: 18%">詳細</label>
+            <textarea name='description' style="width: 80%;" id='issueDesc' required></textarea>
+        </div>
+        <div class='form-group block'>
+          <div class="float-center" style='padding-top: 5%;'>
+            <button type='button' id='back' class='form-group back btn-light' style='margin-right: 3%'>back</button>
+            <button type='button' id='post-event' class="btn-light" style='margin-left: 3%'>save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>

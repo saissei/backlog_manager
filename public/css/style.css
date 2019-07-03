@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'hare';
+  src: local('./fonts/Harenosora.otf');
+}
+html {
+  width: 550px;
+  height: 620px;
+}
+body {
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'hare';
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%; /*必要な幅に設定*/
+  margin: auto; /*ブラウザ中央に配置*/
+  padding: auto;
+}
+.container:after { /*clearfix設定*/
+  content:"";
+  display:block;
+  clear:both;
+}
+.content-wrap {
+  width: 100%;
+  margin: auto;
+}
+.content-wrap:after { /*clearfix設定*/
+  content:"";
+  display:block;
+  clear:both;
+}
+.left_wrap {
+  width: 35%;
+  float: left;
+}
+.left_wrap_box {
+  width: 90%;
+  float: left;
+}
+.right_wrap {
+  width: 63%;
+  float: right;
+}
+.wrap {
+  width: 98%;
+  height: 98%;
+  padding-top: 10px;
+}
+.left {
+  width: 93%;
+  float: left;
+}
+.right {
+  width: 5%;
+  float: right;
+}
+
+.col-title {
+  text-align: center;
+  padding: 2%;
+}
+.col-body {
+  text-align: left;
+  padding: 2%;
+}
+.col-counter {
+  text-align: center;
+  padding: 2%;
+}
+
+.box-parent{
+  position: relative;
+  margin: auto;
+  text-align:center;
+}
+.search-fields{
+  position: absolute;
+  margin: auto;
+}
+.link_button {
+  font-weight: bold;/*太字に*/
+  text-decoration: none;/*下線消す*/
+  background: skyblue;/*背景を水色に*/
+  color:white;/*文字を白に*/
+  padding:5px 10px;/*内側の余白*/
+  border-radius: 20px;/*角を丸くする*/
+  font-family: 'Avenir','Arial';/*フォントをいい感じに*/
+  }
+
+/*以下カーソルを当てたとき*/
+.link_button:hover {
+  background: silver;/*背景色をシルバーに*/
+  text-decoration: none;/*下線を消す*/
+  }
+
+/*以下訪問済みのデザイン*/
+.link_button:visited {
+  color: gray;/*文字をグレイに*/
+}
+
+/* full calendar */
+.fc-sun { color: red; }  /* 日曜日 */
+.fc-sat { color: blue; } /* 土曜日 */
+.fc-event-skin {
+  color: black;
+  background-color: #8fd3f4;
+}
+.form-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+}
+
+.center_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box16{
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+.box16 p {
+  margin: 0;
+  padding: 0;
+  font-size: 80%;
+}
+
+h1{
+  width: 100%;    /*横幅の指定*/
+  font-size: 150%;    /*フォントサイズの指定*/
+  color: #313131; /*文字色の変更*/
+  letter-spacing: 3px;    /*文字と文字の間隔をあける*/
+  padding-bottom:2px; /*文字下部の余白指定*/
+  padding-top: 10px; /*文字上部の余白指定*/
+  border-bottom: 1px solid #bababa;   /*文字の下部に線を描く*/
+  margin-bottom: 15px;    /*セクションタイトルの下に余白をつくる*/
+  float: left;    /*フロートする*/
+}
+
+p.title{
+  font-size: 14px;    /*フォントサイズの指定*/
+  font-weight:bolder;
+  color: #313131; /*文字色の変更*/
+  letter-spacing: 3px;    /*文字と文字の間隔をあける*/
+  line-height: 200%;  /*行間をあける*/
+  margin-bottom: 10px;    /*文字とボタンの間をあける*/
+  float: left;    /*フロートする*/
+}
+
+.data{
+  font-size: 14px;    /*フォントサイズの指定*/
+  color: #313131; /*文字色の変更*/
+  letter-spacing: 3px;    /*文字と文字の間隔をあける*/
+  line-height: 200%;  /*行間をあける*/
+  margin-bottom: 10px;    /*文字とボタンの間をあける*/
+  float: left;    /*フロートする*/
+}
+
+.description{
+  font-size: 14px;    /*フォントサイズの指定*/
+  color: #313131; /*文字色の変更*/
+  letter-spacing: 3px;    /*文字と文字の間隔をあける*/
+  line-height: 200%;  /*行間をあける*/
+  margin-bottom: 10px;    /*文字とボタンの間をあける*/
+  float: left;    /*フロートする*/
+}
+
+
+
+.liner {
+  border-bottom: 1px solid #c2c2c2;
+  border-width: 70%;
+}
+
+textarea{
+  vertical-align:top;
+}
+.block {
+  width: 100%;
+}
+.block:after { /*clearfix設定*/
+  content:"";
+  display:block;
+  clear:both;
+}
+.float-right {
+  width: 49%;
+  text-align: right; 
+}
+.float-left-box {
+  width: 100%;
+  text-align: left; 
+}
+.float-left {
+  width: 49%;
+  text-align: left; 
+}
+
+.float-center {
+  text-align: center;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: -340px;
+  overflow: hidden;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  transition: left .5s, right .5s;
+  background-color: rgba(86, 86, 86, .7);
+}

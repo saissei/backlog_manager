@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html style='width: 500px; height: 200px;'>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <!-- script -->
+    
+    <script type='text/javascript' src="./public/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/bootstrap/bootstrap.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/moment.js"></script>
+    <script type='text/javascript' src="./public/scripts/fullcalendar-3.9.0/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="./public/scripts/buttons.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/slidebar.css" />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/scripts/fullcalendar-3.9.0/fullcalendar.min.css" />
+    <script type="text/javascript" src="./public/scripts/load_config.js"></script>
+    <script src="./public/scripts/queryStrings.js"></script>
+
+
+  </head>
+
+  <body>
+    <div id="" class="" type="">
+      <div class="container" style='padding-top: 2%;'>
+        <form>
+          <div class='form-group'>
+            <label style='width: 35%;'>Backlog API Key</label>
+            <input style="width:63%;" id='apiKey' />
+          </div>
+          <div class='form-group'>
+              <label style='width: 35%;'>Backlog Workspace</label>
+              <input style="width:63%;" id='workspace' />
+            </div>
+          <div class='form-group float-center' style='padding-top: 2%;'>
+            <button type='button' id='back' class='form-group back btn-light' style="display:none">back</button>
+            <button type='submit' id='save-event' class="btn-light">save</button>
+          </div>
+        </form>
+      </div>
+      <div class='center_wrap'>
+        <div class="box16">
+            <p style="font-weight:bolder;">apiKey 取得方法: </p>
+            <p>Backlogにアクセスして、画面右上のご自身のアイコンから ［個人設定］=> [API] の順で進み、メモに<b>chrome extension</b>と入力の上 [登録] を押すと発行が可能です。</p>
+            </br>
+            <p style="font-weight:bolder;">ワークスペースについて: </p>
+            <p>Backlogログイン後、アドレスバーに表示されている<b>https://○○○.backlog.com/</b>の<b>○○○</b>の部分を入力してください。</p>
+        </div>
+      </div>
+    </div>
+  </body>

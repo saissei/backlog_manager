@@ -1,0 +1,17 @@
+{
+  "name": "Backlog Easy Manager",
+  "version": "1.2.2",
+  "manifest_version": 2,
+  "description": "backlogのスケジュールをExtensionで！",
+  "browser_action": {
+    "default_popup": "main.html",
+    "default_icon": "./public/image/icon-backlog-plugin.png"
+  },
+  "permissions":[
+    "notifications",
+    "tabs",
+    "activeTab",
+    "storage"
+   ],
+  "content_security_policy": "script-src 'self' https://unpkg.com https://*.backlog.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-eval'; object-src 'self'"
+}

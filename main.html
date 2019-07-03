@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <!-- script -->
+
+    <script type='text/javascript' src="./public/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/tether/tether.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/bootstrap/bootstrap.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/jsrender.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/moment.js"></script>
+    <script type='text/javascript' src="./public/scripts/fullcalendar-3.9.0/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./public/scripts/storage.js"></script>
+    <script type="text/javascript" src="./public/scripts/buttons.js"></script>
+    <script type='text/javascript' src='./public/scripts/slidemenu.js'></script>
+    <!-- style -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/slidebar.css" />
+    <link rel="stylesheet" href="./public/css/tether/tether.min.css" />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/scripts/fullcalendar-3.9.0/fullcalendar.min.css" />
+    <script type="text/javascript" src="./public/scripts/fullcalendar-3.9.0/locale/ja.js"></script>
+    <script type="text/javascript" src="./public/scripts/cal.js"></script>
+    <script type="text/javascript" src="./public/scripts/backlog.js"></script>
+    <script type="text/javascript" src="./public/scripts/getEvent.js"></script>
+    <script type="text/javascript" src="./public/scripts/slidemenu.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
+    <script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+    <script src="./public/scripts/queryStrings.js"></script>
+
+
+  </head>
+
+  <body>
+    <a id="simple-menu" href="#sidr">
+        <button type="button" class="btn-light">
+          menu
+        </button>
+    </a>
+    <div id="sidr" style='display: none;'>
+      <!-- Your content -->
+      <ul>
+        <li><a href="/settings.html">settings</a></li>
+      </ul>
+    </div>
+    <div class="container" id="main-contents" type="hidden">
+
+      <div class="float-center">
+        <select name="project" id="ul3">
+          <option value="" style="display: none;"> --- ワークスペースを選択してください ---</option>
+        <script id="tmpl3" type="text/x-jsrender">
+          <option value="{{:KeyId}}"> {{:#index}} - {{:Name}} </option>
+        </script>
+        </select>
+      </div>
+
+      <div class="wrap">
+        <div id="calendar"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+.ticket__content{padding-top:15px;padding-right:25px;padding-left:25px;}
+.Lt-ie10 .ticket__properties::after,.ticket__content::after{display:table;clear:both;content:''}
+.ticket__content.-has-see-all{padding-bottom:5px}

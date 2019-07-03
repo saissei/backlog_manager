@@ -1,0 +1,90 @@
+#menuButton {
+    display: block;
+    width: 42px;
+    height:42px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+}
+#menuButton span {
+    display: block;
+    background: #666;
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    left: 9px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+#menuButton span:first-child {
+    top: 12px;
+}
+#menuButton span:nth-child(2) {
+    margin-top: -1px;
+    top: 50%;
+}
+#menuButton span:last-child {
+    bottom: 12px;
+}
+#menuButton.active span:first-child {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -moz-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+#menuButton.active span:nth-child(2) {
+    opacity: 0;
+}
+#menuButton.active span:last-child {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+#menuButton {
+    display: block;
+    width: 42px;
+    height:42px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+}
+#menuButton span {
+    display: block;
+    background: #666;
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    left: 9px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+#menuButton span:first-child {
+    top: 12px;
+}
+#menuButton span:nth-child(2) {
+    margin-top: -1px;
+    top: 50%;
+}
+#menuButton span:last-child {
+    bottom: 12px;
+}
+#menuButton.active span:first-child {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -moz-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+#menuButton.active span:nth-child(2) {
+    opacity: 0;
+}
+#menuButton.active span:last-child {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html style='width: 500px; height: 420px;'>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <!-- script -->
+
+    <script type='text/javascript' src="./public/scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/tether/tether.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/bootstrap/bootstrap.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/jsrender.min.js"></script>
+    <script type='text/javascript' src="./public/scripts/moment.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./public/scripts/buttons.js"></script>
+    <script type="text/javascript" src="./public/scripts/backlog.js"></script>
+    <script type="text/javascript" src="./public/scripts/queryStrings.js"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/tether/tether.min.css" />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.min.css" />
+    <script src="./public/scripts/query_hash.js"></script>
+
+  </head>
+  <body>
+    <div class="container" id="issue" style="padding-bottom: 1%;">
+      <div class="col-xs-12 col-sm-12 col-md-12 content-wrap">
+        <h1>
+          <a id="issue-link" href='#' target="_blank">xxx-xxx</a>
+        </h1>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12">
+          <p class="left_wrap title">課題名: </p>
+          <p id="issue-title" class="right_wrap data"><b>取得中、または不明なデータ</b></p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+          <p class="left_wrap title">課題開始日時: <br></p>
+          <p id="issue-start" class="right_wrap data"><b>YYYY-MM-DD</b><br></p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <p class="left_wrap title">課題終了日時: <br></p>
+        <p id="issue-end" class="right_wrap data"><b>YYYY-MM-DD</b><br></p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+          <p class="left_wrap_box title">課題詳細: </p>
+          <div class=''>
+            <p id="issue-desc" class="description float-left-box">取得中、または不明なデータ</p>
+          </div>
+      </div>
+    </div>
+    <div class="container col-xs-12 col-sm-12 col-md-12 float-center" style='width: 100%; padding-top: 5%; padding-bottom: 5%'>
+      <button type="button" class="btn btn-light btn-xs back">back</button>
+      <button type="button" class="btn btn-success btn-xs task-done" id="task-done" style='display: none;'>完了</button>
+    </div>
+
+  </body>
